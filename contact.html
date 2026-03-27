@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Caffeinated Coder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body class="bg-white text-slate-900">
+
+    <nav class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+        <div class="text-xl font-bold tracking-tighter">Caffeinated Coder</div>
+        <ul class="hidden md:flex space-x-8 text-sm font-medium">
+            <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+            <li><a href="work.html" class="hover:text-blue-600 transition">Work</a></li>
+            <li><a href="services.html" class="hover:text-blue-600 transition">Services</a></li>
+            <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+            <li><a href="contact.html" class="bg-black text-white px-4 py-2 rounded-full">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="max-w-3xl mx-auto px-6 py-20">
+        <div class="mb-12">
+            <h1 class="text-4xl font-bold tracking-tight text-slate-900">Let's collaborate.</h1>
+            <p class="text-slate-500 mt-4 text-lg">Currently accepting new projects for 2026. Drop a message and I'll get back to you within 24 hours.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mzdkpkdg" method="POST" class="space-y-6" data-netlify="true">
+            
+            <input type="hidden" name="_next" value="thank-you.html">
+            <input type="hidden" name="_subject" value="New Portfolio Lead!">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase text-slate-400 mb-2">Full Name</label>
+                    <input type="text" name="name" placeholder="John Doe" required class="bg-slate-50 border border-slate-100 rounded-xl p-4 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+                <div class="flex flex-col">
+                    <label class="text-xs font-bold uppercase text-slate-400 mb-2">Email Address</label>
+                    <input type="email" name="email" placeholder="john@example.com" required class="bg-slate-50 border border-slate-100 rounded-xl p-4 focus:ring-2 focus:ring-blue-600 outline-none transition">
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <label class="text-xs font-bold uppercase text-slate-400 mb-2">Subject</label>
+                <select name="subject" class="bg-slate-50 border border-slate-100 rounded-xl p-4 focus:ring-2 focus:ring-blue-600 outline-none transition cursor-pointer text-slate-600">
+                    <option>Web Development</option>
+                    <option>UX/UI Design</option>
+                    <option>Video Editing</option>
+                    <option>Other / General Inquiry</option>
+                </select>
+            </div>
+
+            <div class="flex flex-col">
+                <label class="text-xs font-bold uppercase text-slate-400 mb-2">Message</label>
+                <textarea name="message" rows="5" placeholder="Tell me about your project..." required class="bg-slate-50 border border-slate-100 rounded-xl p-4 focus:ring-2 focus:ring-blue-600 outline-none transition"></textarea>
+            </div>
+
+            <button type="submit" class="w-full bg-black text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition transform active:scale-95">
+                Send Message
+            </button>
+        </form>
+    </main>
+
+    <footer class="border-t border-slate-100 py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center text-slate-500 text-sm">
+        <p>© 2026 Caffeinated Coder. Let's build something epic.</p>
+        <div class="flex gap-6 mt-4 md:mt-0">
+            <a href="https://github.com/Code-Mode-Road" target="_blank" class="hover:text-black transition font-medium">GitHub</a>
+            <a href="https://x.com/CaffeinateCoder" target="_blank" class="hover:text-black transition font-medium">X / Twitter</a>
+            <a href="https://youtube.com/@Caffeinated_Coder22" target="_blank" class="hover:text-black transition font-medium">YouTube</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
